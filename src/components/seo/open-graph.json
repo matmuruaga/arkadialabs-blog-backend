@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_seo_open_graphs",
+  "info": {
+    "displayName": "OpenGraph",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "ogTitle": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "ogDescription": {
+      "type": "text",
+      "maxLength": 200
+    },
+    "ogImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "ogType": {
+      "type": "enumeration",
+      "default": "article",
+      "enum": [
+        "article",
+        "website"
+      ]
+    },
+    "ogUrl": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
