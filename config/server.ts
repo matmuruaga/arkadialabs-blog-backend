@@ -4,8 +4,14 @@ export default ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
-  url: env('PUBLIC_URL', 'https://arkadialabs.io'),
-  proxy: true,
+  url: env('PUBLIC_URL', 'https://arkadialabs-blog-backend-production.up.railway.app'),
+  proxy: {
+    enabled: true,
+    ssl: true,
+    koa: {
+      keys: env.array('APP_KEYS'),
+    },
+  },
   admin: {
     auth: {
       secret: env('ADMIN_JWT_SECRET'),
