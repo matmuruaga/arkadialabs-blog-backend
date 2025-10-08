@@ -4,4 +4,9 @@ export default ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
+  url: env('PUBLIC_URL', 'https://arkadialabs.io'),
+  proxy: env.bool('IS_PROXIED', true), // Railway uses proxy
+  cors: {
+    enabled: true,
+  },
 });
