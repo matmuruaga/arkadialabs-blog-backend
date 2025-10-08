@@ -5,7 +5,6 @@ export default [
   {
     name: 'strapi::cors',
     config: {
-      enabled: true,
       origin: [
         'http://localhost:3000', // Development
         'https://blog.arkadialabs.io', // Production custom domain
@@ -22,6 +21,4 @@ export default [
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
-  'global::sitemap',
-  'global::robots',
 ];
